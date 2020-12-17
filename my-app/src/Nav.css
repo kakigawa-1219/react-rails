@@ -1,0 +1,86 @@
+
+/*nav*/
+
+nav{
+  height: 50px;
+}
+
+.nav-menu{
+  height: 50px;
+}
+.nav-item {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  height: 50px;
+  width: 200px;
+  float: left;
+  background-color: #202d74
+  ;
+  color: #ffffff;
+  cursor: pointer;
+  cursor: hand;
+}
+.nav-item:not(:last-child){
+  border-right:2px solid #ddd;
+  }
+
+
+
+  .fa-bars {
+    color: #000000;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 750px) {
+  .navbar{
+    height: 0;
+  }
+  .nav-item{
+text-align: center;
+  }
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      height: 100%;
+      position: absolute;
+      top: 80px;
+      left: -120%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  .nav-item{
+    width: 100vw;
+    height: 15vh;
+    line-height: 15vh;
+  }
+    .nav-menu.active {
+     
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 10;
+    }
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 1%;
+      right: -2%;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #000000;
+      font-size: 2rem;
+    }
+  
+
+    
+  }

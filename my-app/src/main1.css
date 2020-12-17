@@ -1,0 +1,52 @@
+
+.container3{
+    height: 406px;
+}
+.main-image {
+    position: relative;
+}
+.main-image img{
+    width: 100%;
+}
+.slick-arrow{
+    position:absolute;
+    z-index: 1;
+}
+.slick-prev{
+    top: 136px;
+} 
+.slick-next{
+    top: 136px;
+    right: 0;
+} 
+.thumb_list{
+    width: 336px;
+    float: left;
+}
+.thumb_list img{
+    width: 100%;
+    filter: brightness(65%) ;
+}
+
+.slick-thumb li.slick-active img{
+    filter: grayscale(0%);
+}
+
+
+@media screen and (max-width: 750px) {
+    .container3{
+        height: auto;
+    }
+
+    .thumb_list img{
+        width: calc(100vw / 3);
+    }
+    .thumb_list{
+        width: calc(100vw / 3);
+        }
+    .slick-arrow{
+        visibility: hidden;
+    }
+    
+    
+}

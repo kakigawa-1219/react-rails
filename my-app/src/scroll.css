@@ -1,0 +1,20 @@
+.link-button{
+    margin-bottom:150px;
+    color: #ffffff;
+    right:0;
+   
+}
+
+
+.scroll{
+    width: 45px;
+    right: 1%;
+    position: fixed;
+    cursor: pointer;
+  cursor: hand;
+  position: absolute;
+}
+.fa-chevron-circle-up{
+    width: 45px;
+    
+}

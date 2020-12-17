@@ -1,0 +1,172 @@
+
+#main2{
+    height: 1000px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#main2_left{
+    height: 100%;
+    width: 304px;
+    float: left;
+    margin-right: 42px;
+    color: #202d74;
+}
+#login{
+    text-align: center;
+}
+#login h2{
+    margin: 0;
+    margin-bottom: 14px;
+}
+.login_button{
+    height: 42px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    border-style: none;
+}
+.login{
+    background-color: #8fc31f
+}
+.login_first{
+    background-color: #202d74;
+    margin-bottom: 4px;
+}
+#login a{
+    font-size: 12px;
+}
+
+#service_guide{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 41px;
+}
+#service_guide li{
+    width: 97px;
+    height: 97px;
+    margin-right: 6.5px;
+    margin-bottom: 6.5px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1e8796;
+
+}
+#service_guide li:nth-child(3n){
+    float: none;
+    margin-right: 0;
+}
+#guide1{
+    margin-bottom: 30px;
+}
+#guide1 li{
+    height: 42px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #202d74;
+
+}
+#guide2{
+    margin-bottom: 30px;
+}
+#guide2 li{
+    height: 42px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #8fc31f;
+
+}
+#guide3 img{
+width: 100%;
+}
+
+
+
+#main2_right{
+    float: left;
+    width: 662px;
+    height: 100%;
+}
+#main2_right h2{
+    margin: 0;
+}
+.accordionContent{
+    height: 100px;
+    padding-left: 25px;
+    margin-top: 10px;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+  
+}
+.accordionContent li{
+    width: 200px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.accordionHeading{
+    height: 35px;
+    margin: 0;
+    line-height: 35px;
+    padding-left: 15px;
+    font-size: 15px;
+    border-left: solid 15px #1e8796;
+    border-bottom: solid 1px #1e8796;
+}
+
+.accordionContent.show{
+    height:100px;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 750px) {
+#main2{
+    height: auto;
+}
+    #main2_left{
+        height: auto;
+        width: 100vw;
+        float: left;
+        margin-right: 42px;
+        color: #202d74;
+    }
+    #service_guide {
+        margin-left: 20px;
+    }
+    #service_guide li{
+        width: 31%;
+        height: 97px;
+        margin-right: 6.5px;
+        margin-bottom: 6.5px;
+    }
+    #guide1,#guide2,#guide3{
+        display: none;
+    }
+    #main2_right{
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}

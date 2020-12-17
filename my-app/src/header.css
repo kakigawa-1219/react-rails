@@ -1,0 +1,78 @@
+/*header            */
+
+header{
+    min-height: 65px;
+}
+#link-top,#code,#font-size,#moji-size,#syou,#tyuu,#dai,#global,#site-map,#search{
+    float: left;
+}
+#link-top{
+    margin-right: 250px;
+}
+#code{
+    margin-right: 20px;
+    margin-top: 34px;
+}
+#font-size{
+    margin-right: 20px;
+    margin-top: 29px;
+}
+#moji-size{
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#syou,#tyuu{
+    margin-right: 10px;
+}
+#eigo{
+    float: left;
+    width: 152px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#global{
+    margin-right: 18px;
+}
+#search input{
+    font-size: 12px;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    width: 100%;
+    
+}
+#search input{
+    height: 16px;
+    max-width: 129px;
+}
+#button{
+    margin-top: 28.5px;
+    height: 30px;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    #link-top{
+        float: none;
+    }
+    #code{
+        display: none;
+    }
+    #font-size,#eigo{
+        display: none;
+    }
+    #button{
+        display: block;
+        position: absolute;
+        top: -1%;
+        right: 10%;
+    }
+    #search{
+        display: block;
+        position: absolute;
+        top: 3.3%;
+        right: 14.5%;
+    }
+}
