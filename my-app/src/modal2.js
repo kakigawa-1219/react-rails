@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
-import App_login from './App_login';
+import App_login2 from './App_login2';
 import './modal.css'
 const customStyles = {
   content : {
@@ -16,7 +16,7 @@ const customStyles = {
 };
 
 Modal.setAppElement('#root') //任意のアプリを設定する　create-react-appなら#root
-class ModalWindow extends React.Component {
+class ModalWindow2 extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -43,7 +43,7 @@ class ModalWindow extends React.Component {
 <>
       
       <div className="modal-login">
-        <button className="login_button login" onClick={this.openModal}>ログインサービス</button>
+      <div><button className="login_button login_first" onClick={this.openModal}>初めてログインする方</button></div>
         
         <Modal
           isOpen={this.state.modalIsOpen}
@@ -54,12 +54,12 @@ class ModalWindow extends React.Component {
         >
           <button className="modal-close"onClick={this.closeModal}>×</button>
           <div ref={subtitle => this.subtitle = subtitle}></div>
-          <App_login/>
-            
+          <App_login2/>
+         
         </Modal>
       </div>
       </>
     );
   }
 }
-export default ModalWindow;
+export default ModalWindow2;

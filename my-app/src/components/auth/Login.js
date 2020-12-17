@@ -32,7 +32,6 @@ export default function Login(props) {
             {/* ログインに変更 */}
             <p>ログイン</p>
           <br></br>
-            <input type="submit" className="modal-login-button" value="ログイン"></input>
             {/* フォーム内のpassword_confrmation入力フィールド削除 */}
             <form onSubmit={handleSubmit}>
                 <input

@@ -6,7 +6,8 @@ import Main2 from './main2.js';
 import Footer from './footer.js';
 import Copyright from './copyright.js';
 import {BrowserRouter as Router} from 'react-router-dom'
-class App extends Component {
+import './index.css';
+class App2 extends Component {
   render() {
     return (
         <>
@@ -35,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default App2

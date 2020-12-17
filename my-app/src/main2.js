@@ -1,6 +1,7 @@
 import React , {Component} from 'react'
 import Tab_sum from './Tab'
 import ModalWindow from './modal'
+import ModalWindow2 from './modal2'
 import Accordion2 from './accordion2'
 import './main2.css'
 class Main2 extends Component{
@@ -15,7 +16,8 @@ class Main2 extends Component{
                     <h2>インターネットバンキング</h2>
                     <div >せらく銀行インターネットバンキング</div>
                     <ModalWindow />
-                    <div><button className="login_button login_first">初めてログインする方</button></div>
+                    <ModalWindow2 />
+                    
                    <div><a href="#">＞パスワード忘れた方はこちら</a></div>
                 </div>
                 <div id="service_guide">

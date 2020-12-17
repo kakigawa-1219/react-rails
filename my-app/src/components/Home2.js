@@ -1,7 +1,7 @@
 import React from 'react'
-import Registration from './auth/Registration'
+import Login from './auth/Login'
 
-export default function Home(props) {
+export default function Home2(props) {
 
     // 追加
     const handleSuccessfulAuthentication = (data) => {
@@ -11,8 +11,8 @@ export default function Home(props) {
   
     return (
         <div>
-        <Registration handleSuccessfulAuthentication={handleSuccessfulAuthentication} />
-        
+     
+        <Login handleSuccessfulAuthentication={handleSuccessfulAuthentication} />
     </div>
     )
 }

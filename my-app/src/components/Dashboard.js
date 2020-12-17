@@ -12,8 +12,7 @@ export default function Dashboard(props) {
   
     return (
         <div>
-             <a href="#">リンkじゅ</a>
-           <App2 />
+          <h3>ログイン済み</h3>
             <button onClick={handleLogoutClick}>ログアウト</button>
         </div>
     )
